@@ -80,8 +80,8 @@ ul li {
   text-transform: capitalize;
 }
 .datos {
-
   list-style-type: none;
+  padding: .4rem 0;
 }
 
 .datos li {
@@ -114,4 +114,14 @@ span.resalte {
 
 main * {
   text-transform: lowercase !important;
+}
+
+footer {
+  text-align: center;
+  color: #777;
+  font-size: 0.95rem;
+}
+
+section {
+  min-height: 70vh;
 }
