@@ -38,13 +38,80 @@ nav a[aria-current='page'] {
 
 main {
   padding: 1rem;
+  max-width: 800px;
+  width: 80vw;
+  margin: 0 auto;
 }
 
-title {
-  font-size: 1.5rem;
+header {
+  text-align: center;
 }
 
 h1 {
   font-weight: bold;
   font-size: 1.5rem;
+}
+
+header h1 {
+  font-variant: all-small-caps;
+  margin: 0rem;
+}
+
+svg {
+  min-width: 13rem;
+}
+
+.geo {
+  display: flex;
+  justify-content: center;
+}
+
+.temario {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.temario ul {
+  flex-basis: min-content;
+  flex-grow: 1;
+}
+
+ul li {
+  text-transform: capitalize;
+}
+.datos {
+
+  list-style-type: none;
+}
+
+.datos li {
+  margin: 1.4rem 0rem;
+  text-transform: none;
+}
+
+span.resalte {
+      background: black;
+        color: white;
+        margin: .3rem;
+        padding: 0.3rem;
+}
+
+#prisma {
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-name: rodar;
+}
+
+@keyframes rodar {
+  from {
+    transform: rotate(0deg);
+  }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+main * {
+  text-transform: lowercase !important;
 }
