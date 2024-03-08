@@ -5,8 +5,9 @@
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
-  color: black;
+  color: #444;
   background-color: white;
+  overflow-x: hidden;
 }
 
 nav {
@@ -76,8 +77,8 @@ svg {
   flex-grow: 1;
 }
 
-ul li {
-  text-transform: capitalize;
+ul li:first-letter {
+  text-transform:capitalize;
 }
 .datos {
   list-style-type: none;
@@ -85,8 +86,16 @@ ul li {
 }
 
 .datos li {
-  margin: 1.4rem 0rem;
+  /* margin: 1.4rem 0rem; */
   text-transform: none;
+      display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+}
+
+span.text {
+  flex-basis: 13rem;
+  flex-grow: 1;
 }
 
 span.resalte {
@@ -111,10 +120,10 @@ span.resalte {
       transform: rotate(360deg);
     }
 }
-
+/* 
 main * {
   text-transform: lowercase !important;
-}
+} */
 
 footer {
   text-align: center;
@@ -123,5 +132,9 @@ footer {
 }
 
 section {
-  min-height: 70vh;
+  min-height: 60vh;
+}
+
+.wa-btn {
+  border: 2px solid #103928;
 }
